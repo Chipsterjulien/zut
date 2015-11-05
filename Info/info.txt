@@ -1,0 +1,11 @@
+Serveur:
+	gin
+	basicAuth (à retoucher pour prendre en compte la db)
+	identification via header
+	https
+	restful API
+
+Client:
+	angularjs
+	angular material
+	restangular (à voir pour garder les header [www-authenticate])

@@ -1,0 +1,10 @@
+# logtype can take: debug, info, notice, warning, error, critical
+# warning is the default
+logtype = "debug"
+
+[database]
+path = "."
+filename = "temperature.db"
+
+[server]
+port = 8080

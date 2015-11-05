@@ -1,0 +1,23 @@
+<h1 class="menu-heading">Identification pour l'habilitation</h1>
+
+<form name="login">
+	<md-content layout="row" layout="column" layout-padding layout-margin layout-wrap>
+		<md-input-container layout-padding>
+			<label>Nom</label>
+			<input name="lastname" ng-model="user.lastname" ng-required="true">
+		</md-input-container>
+		<md-input-container layout-padding>
+			<label>Prénom</label>
+			<input ng-model="user.firstname" ng-required="true">
+		</md-input-container>
+		<md-input-container layout-padding>
+			<label>Mot de passe</label>
+			<input ng-model="user.password" type="password" ng-required="true">
+		</md-input-container>
+		<md-content layout="column" flex-sm="100" layout-align="end">
+			<md-content layout-sm="row" layout-align-sm="end end">
+				<md-button ng-disabled="!(user.lastname && user.firstname && user.password)" class="md-raised md-primary" ng-click="validateLogin()">Valider</md-button>
+			</md-content>
+		</md-content>
+	</md-content>
+</form>
