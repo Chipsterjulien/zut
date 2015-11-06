@@ -1,5 +1,9 @@
 function runBlock($rootScope, Restangular) {
-	Restangular.addResponseInterceptor(function (data, operation, what, url, response, deferred) {
+	Restangular.addResponseInterceptor(function (data, operation, what, url, response, deferred, $state) {
+      // redirect to login page when server return 401 unauthorized
+      if (response.status === 401) {
+        $state.go("login");
+      }
 		console.log("````````````````");
 		console.log(data);
 		console.log(operation);
