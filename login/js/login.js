@@ -1,7 +1,7 @@
 // Script personnel
 var app = angular.module("loginHabilitation", ["ui.router", "restangular", "ngMaterial"]).run(runBlock);
 
-function runBlock(Restangular) {
+function runBlock($rootScope, Restangular) {
 	Restangular.addResponseInterceptor(function (data, operation, what, url, response, deferred) {
 		console.log("````````````````");
 		console.log(data);
@@ -20,6 +20,10 @@ function runBlock(Restangular) {
 		console.log(element);
 		console.log(httpConfig);
 		console.log("````````````````");
+		console.log("----------------");
+    console.log($rootScope.identifiant);
+    console.log($rootScope.password);
+		console.log("----------------");
 	});
 }
 
@@ -41,10 +45,14 @@ app.config(function ($stateProvider, $urlRouterProvider, RestangularProvider) {
 });
 
 // Fonction qui permet de se logger
-app.controller("loginHabilitationCtrl", function ($scope, Restangular) {
+app.controller("loginHabilitationCtrl", function ($scope, $rootScope, Restangular) {
 	// Chipster1: tu fais ça avec retangular: Restangular.addResponseInterceptor (pour verif le code de retour du serveur), et Restangular.addFullRequestInterceptor pour set le header avec les credential a chaque requests
-	var that = $scope;
 
-	that.validateLogin = function (Restangular) {
+  var that = $scope;
+
+	$scope.validateLogin = function () {
+    $rootScope.identifiant = that.identifiant;
+    $rootScope.password = that.password;
+    Restangular.one("plop").get();
 	};
 });
