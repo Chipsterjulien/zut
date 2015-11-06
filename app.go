@@ -1,13 +1,14 @@
 package main
 
 import (
+	"strconv"
+	"time"
+
 	"github.com/gin-gonic/gin"
 	"github.com/itsjamie/gin-cors"
 	"github.com/jinzhu/gorm"
 	"github.com/op/go-logging"
 	"github.com/spf13/viper"
-	"strconv"
-	"time"
 )
 
 // Struct permit to have DB access on method
@@ -41,7 +42,7 @@ func startApp(db *gorm.DB) {
 		ValidateHeaders: false,
 	}))
 
-	g.Static("/", "./login")
+	g.Static("/", "./static")
 
 	/*v1 := g.Group("api/v1")
 	{
