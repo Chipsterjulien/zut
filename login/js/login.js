@@ -29,12 +29,14 @@ app.config(function ($stateProvider, $urlRouterProvider, RestangularProvider) {
 	RestangularProvider.setBaseUrl("localhost:8080/");
 
 	// Configuration de uirouter
-	$urlRouterProvider.otherwise("/");
+	$urlRouterProvider.otherwise("/login");
 	$stateProvider
 		.state("login", {
-			url: "/",
+			url: "/login",
 			templateUrl: "partials/login.html",
-			controller: "loginHabilitationCtrl"
+			controller: "loginHabilitationCtrl",
+			controllerAs: "login"
+			// controllerAs permet de raccourcir le code dans le template. Je peux écrire login au lieu de loginHabilitationCtrl
 	});
 });
 
