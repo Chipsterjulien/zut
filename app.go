@@ -45,11 +45,11 @@ func startApp(db *gorm.DB) {
 	g.Static("/static", "./static")
 	//g.GET("./static/index.html")
 
-	authorized := g.Group("/authorized", gin.BasicAuth(gin.Accounts{
+	authorized := g.Group("/static/exem", gin.BasicAuth(gin.Accounts{
 		"essai": "essai",
 	}))
 
-	authorized.GET("/test", func(c *gin.Context) {
+	authorized.GET("/", func(c *gin.Context) {
 		log.Debug("Coin coin\n")
 	})
 
