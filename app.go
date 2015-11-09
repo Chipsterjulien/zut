@@ -42,7 +42,16 @@ func startApp(db *gorm.DB) {
 		ValidateHeaders: false,
 	}))
 
-	g.Static("/", "./static")
+	g.Static("/static", "./static")
+	//g.GET("./static/index.html")
+
+	authorized := g.Group("/authorized", gin.BasicAuth(gin.Accounts{
+		"essai": "essai",
+	}))
+
+	authorized.GET("/test", func(c *gin.Context) {
+		log.Debug("Coin coin\n")
+	})
 
 	/*v1 := g.Group("api/v1")
 	{

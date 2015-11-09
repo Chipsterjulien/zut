@@ -22,10 +22,10 @@ function runBlock($rootScope, Restangular) {
 		console.log(httpConfig);
 		console.log("````````````````");
 		console.log("----------------");
-    console.log($rootScope.identifiant);
-    console.log($rootScope.password);
+		console.log($rootScope.identifiant);
+		console.log($rootScope.password);
 		console.log("----------------");
-      headers.Authorization = btoa($rootScope.identifiant + ":" + $rootScope.password);
+		headers.Authorization = btoa($rootScope.identifiant + ":" + $rootScope.password);
 		console.log("header.Authorization: ", headers.Authorization);
 	});
 }
