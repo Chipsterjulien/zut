@@ -25,6 +25,7 @@ function runBlock($rootScope, Restangular) {
 		console.log($rootScope.identifiant);
 		console.log($rootScope.password);
 		console.log("----------------");
+		// Ne faut-il pas mettre "basic " non encodé en base64 sur la ligne suivante ?
 		headers.Authorization = btoa($rootScope.identifiant + ":" + $rootScope.password);
 		console.log("header.Authorization: ", headers.Authorization);
 	});

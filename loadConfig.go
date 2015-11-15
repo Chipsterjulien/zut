@@ -20,19 +20,14 @@ func loadConfig(filenamePath *string, filename *string) {
 	switch viper.GetString("logtype") {
 	case "critical":
 		logging.SetLevel(0, "")
-		//log.Debug("\"critical\" is selected")
 	case "error":
 		logging.SetLevel(1, "")
-		//log.Debug("\"error\" is selected")
 	case "warning":
 		logging.SetLevel(2, "")
-		//log.Debug("\"warning\" is selected")
 	case "notice":
 		logging.SetLevel(3, "")
-		//log.Debug("\"notice\" is selected")
 	case "info":
 		logging.SetLevel(4, "")
-		//log.Debug("\"info\" is selected")
 	case "debug":
 		logging.SetLevel(5, "")
 		log.Debug("\"debug\" is selected")

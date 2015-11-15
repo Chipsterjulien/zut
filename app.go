@@ -9,6 +9,7 @@ import (
 	"github.com/jinzhu/gorm"
 	"github.com/op/go-logging"
 	"github.com/spf13/viper"
+	"github.com/chipsterjulien/basicAuthWithDBForGin"
 )
 
 // Struct permit to have DB access on method
@@ -43,14 +44,18 @@ func startApp(db *gorm.DB) {
 	}))
 
 	g.Static("/static", "./static")
-	//g.GET("./static/index.html")
 
-	authorized := g.Group("/static/exem", gin.BasicAuth(gin.Accounts{
-		"essai": "essai",
-	}))
+	// authorized := g.Group("authorized", gin.BasicAuth(gin.Accounts{
+	// 	"essai": "essai",
+	// }))
 
+	// authorized.GET("/", func(c *gin.Context) {
+	// 	log.Debug("Coin coin\n")
+	// })
+
+	authorized := g.Group("authorized", basicAuthWithDBForGin.BasicAuthWithDB(db, "Eleves"))
 	authorized.GET("/", func(c *gin.Context) {
-		log.Debug("Coin coin\n")
+		log.Debug("coincoin\n")
 	})
 
 	/*v1 := g.Group("api/v1")
