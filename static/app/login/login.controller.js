@@ -6,6 +6,9 @@ function LoginHabilitationCtrl($scope, $rootScope, $state, Restangular) {
 	$scope.validateLogin = function () {
 		$rootScope.identifiant = that.identifiant;
 		$rootScope.password = that.password;
-		$state.go("exem");
+		// headers.Authorization = btoa($rootScope.identifiant + ":" + $rootScope.password);
+		Restangular.one("authorized").get().then(function() {
+			$state.go("exem");
+		});
 	};
 }

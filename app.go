@@ -55,7 +55,9 @@ func startApp(db *gorm.DB) {
 
 	authorized := g.Group("authorized", basicAuthWithDBForGin.BasicAuthWithDB(db, "Eleves"))
 	authorized.GET("/", func(c *gin.Context) {
+		log.Debug("----------------------------------------")
 		log.Debug("coincoin\n")
+		log.Debug("----------------------------------------")
 	})
 
 	/*v1 := g.Group("api/v1")
