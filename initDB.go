@@ -18,21 +18,27 @@ type Temperatures struct {
 
 type Eleves struct {
 	Id 				int `gorm:"primary_key"`
-	Identifiant		string
-	MotDePasse		string
+	// Username		string `sql:"not null;unique"`
+	// Password		string `sql:"not null"`
+	// Nom 			string `sql:"not null"`
+	// Prenom 			string `sql:"not null"`
+	// Email 			string `sql:"not null"`
+	Username		string
+	Password		string
 	Nom 			string
 	Prenom 			string
 	Email 			string
-	Classe 			string
 	Niveau 			string
 	Sexe 			string
-	DateNaissance 	time.Time
 }
 
 type Exams struct {
 	Id int `gorm:"primary_key"`
-	Date time.Time
+	DebutExam time.Time
+	FinExam time.Time
+	Fini bool
 	Score float64
+	IdEleve int `sql:"type:bigint REFERENCES Eleves(id)"`
 }
 
 type Questions struct {
@@ -43,7 +49,7 @@ type Questions struct {
 type Reponses struct {
 	Id int `gorm:"primary_key"`
 	Reponse string
-	IdQuestion int `sql:"type:bigint REFERENCES Questions(id)"`
+	// IdQuestion int `sql:"type:bigint REFERENCES Questions(id)"`
 }
 
 type Solutions struct {
@@ -52,11 +58,11 @@ type Solutions struct {
 	IdQuestion int `sql:"type:bigint REFERENCES Questions(id)"`
 }
 
-type Passer struct {
-	Id int `gorm:"primary_key"`
-	IdEleves int `sql:"type:bigint REFERENCES Eleves(id)"`
-	IdExams int `sql:"type:bigint REFERENCES Exams(id)"`
-}
+// type Passer struct {
+// 	Id int `gorm:"primary_key"`
+// 	IdEleves int `sql:"type:bigint REFERENCES Eleves(id)"`
+// 	IdExams int `sql:"type:bigint REFERENCES Exams(id)"`
+// }
 
 type ContenirExamsQuestions struct {
 	Id int `gorm:"primary_key"`
@@ -78,8 +84,8 @@ type Apporter struct {
 
 type Corriger struct {
 	Id int `gorm:"primary_key"`
-	IdSolution int `sql:"type:bigint REFERENCES Solutions(id)"`
 	IdReponses int `sql:"type:bigint REFERENCES Reponses(id)"`
+	IdSolution int `sql:"type:bigint REFERENCES Solutions(id)"`
 }
 
 func Initdb() *gorm.DB {
@@ -113,7 +119,6 @@ func Initdb() *gorm.DB {
 	db.CreateTable(new(Questions))
 	db.CreateTable(new(Reponses))
 	db.CreateTable(new(Solutions))
-	db.CreateTable(new(Passer))
 	db.CreateTable(new(ContenirExamsQuestions))
 	db.CreateTable(new(ContenirExamsReponses))
 	db.CreateTable(new(Apporter))
