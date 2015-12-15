@@ -20,3 +20,32 @@
 		</md-content>
 	</md-content>
 </form>
+
+
+<p>
+	Sélection: <span class="radioValue">{{data}}</span>
+</p>
+<md-radio-group ng-model="data">
+	<md-radio-button value="a">réponse 1</md-radio-button>
+	<md-radio-button value="b">réponse 2</md-radio-button>
+	<md-radio-button value="c">réponse 3</md-radio-button>
+</md-radio-group>
+
+<!-- Partie ajout -->
+<!-- 
+ - La question à gauche
+ - Les possibilités à droite
+ - Un bouton validé en bas à droite
+-->
+
+<!-- 
+<div layout='row' layout='column' layout-align='start center'>
+	<div flex>
+		ma question
+	</div>
+	<div layout='column'>
+		<md-checkbox class='md-primary'>Proposition 1</md-checkbox>
+		<md-checkbox class='md-primary'>Proposition 2</md-checkbox>
+		<md-checkbox class='md-primary'>Proposition 3</md-checkbox>
+	</div>
+</div> -->

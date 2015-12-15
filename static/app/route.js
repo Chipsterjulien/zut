@@ -10,10 +10,10 @@ function Route ($stateProvider, $urlRouterProvider, RestangularProvider) {
       controllerAs: "login"
       // controllerAs permet de raccourcir le code dans le template. Je peux écrire login au lieu de loginHabilitationCtrl
   })
-    .state("exem", {
-      url: "/exem",
-      templateUrl: "./app/exem/exem.html",
-      controller: "exemCtrl",
-      controllerAs: "exem"
+    .state("exam", {
+      url: "/exam",
+      templateUrl: "./app/exam/exam.html",
+      controller: "examCtrl",
+      controllerAs: "exam"
   });
 }

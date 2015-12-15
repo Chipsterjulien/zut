@@ -7,7 +7,7 @@ function LoginHabilitationCtrl($scope, $rootScope, $state, Restangular) {
 		$rootScope.password = that.password;
 		
 		Restangular.one("authorized").get().then(function() {
-			$state.go("exem");
+			$state.go("exam");
 		});
 	};
 }

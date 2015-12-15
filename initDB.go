@@ -28,7 +28,7 @@ type Eleves struct {
 	Nom 			string
 	Prenom 			string
 	Email 			string
-	Niveau 			string
+	Classe 			string
 	Sexe 			string
 }
 
@@ -36,6 +36,7 @@ type Exams struct {
 	Id int `gorm:"primary_key"`
 	DebutExam time.Time
 	FinExam time.Time
+	NiveauExam string
 	Fini bool
 	Score float64
 	IdEleve int `sql:"type:bigint REFERENCES Eleves(id)"`
@@ -44,12 +45,13 @@ type Exams struct {
 type Questions struct {
 	Id int `gorm:"primary_key"`
 	Question string
+	Type string
+	Categorie string
 }
 
 type Reponses struct {
 	Id int `gorm:"primary_key"`
 	Reponse string
-	// IdQuestion int `sql:"type:bigint REFERENCES Questions(id)"`
 }
 
 type Solutions struct {
@@ -58,11 +60,11 @@ type Solutions struct {
 	IdQuestion int `sql:"type:bigint REFERENCES Questions(id)"`
 }
 
-// type Passer struct {
-// 	Id int `gorm:"primary_key"`
-// 	IdEleves int `sql:"type:bigint REFERENCES Eleves(id)"`
-// 	IdExams int `sql:"type:bigint REFERENCES Exams(id)"`
-// }
+type Propositions struct {
+	Id int `gorm:"primary_key"`
+	Proposition string
+	IsMath bool
+}
 
 type ContenirExamsQuestions struct {
 	Id int `gorm:"primary_key"`
@@ -74,6 +76,12 @@ type ContenirExamsReponses struct {
 	Id int `gorm:"primary_key"`
 	IdExams int `sql:"type:bigint REFERENCES Exams(id)"`
 	IdReponses int `sql:"type:bigint REFERENCES Reponses(id)"`
+}
+
+type ContenirQuestionsPropositions struct {
+	Id int `gorm:"primary_key"`
+	IdQuestions int `sql:"type:bigint REFERENCES Questions(id)"`
+	IdPropositions int `sql:"type:bigint REFERENCES Propositions(id)"`
 }
 
 type Apporter struct {
@@ -119,8 +127,10 @@ func Initdb() *gorm.DB {
 	db.CreateTable(new(Questions))
 	db.CreateTable(new(Reponses))
 	db.CreateTable(new(Solutions))
+	db.CreateTable(new(Propositions))
 	db.CreateTable(new(ContenirExamsQuestions))
 	db.CreateTable(new(ContenirExamsReponses))
+	db.CreateTable(new(ContenirQuestionsPropositions))
 	db.CreateTable(new(Apporter))
 	db.CreateTable(new(Corriger))
 

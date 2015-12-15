@@ -1,9 +1,9 @@
-function runBlock($rootScope, Restangular) {
-	Restangular.addResponseInterceptor(function (data, operation, what, url, response, deferred, $state) {
-      // redirect to login page when server return 401 unauthorized
-		if (response.status === 401) {
-			$state.go("login");
-		}
+function runBlock($rootScope, Restangular, $state) {
+	Restangular.addResponseInterceptor(function (data, operation, what, url, response, deferred, $rootState) {
+		// redirect to login page when server return 401 unauthorized
+		// if (response.status === 401) {
+		// 	$rootState.go("login");
+		// }
 		console.log("````````````````");
 		console.log("data: " + data);
 		console.log("operation: " + operation);
@@ -19,6 +19,17 @@ function runBlock($rootScope, Restangular) {
 		restElem.fromServer = true;
 		
 		return restElem;
+	});
+
+	Restangular.setErrorInterceptor(function (response) {
+		// redirect to login page when server return 401 unauthorized
+		if (response.status === 401) {
+			$state.go("login");
+
+			return false;
+		}
+
+		return true;
 	});
 
 	// Restangular.addFullRequestInterceptor(function (headers, params, element, httpConfig) {

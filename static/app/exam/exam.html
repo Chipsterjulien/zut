@@ -1,0 +1,68 @@
+<md-toolbar class="md-theme-light">
+	<h2 class="md-toolbar-tools">
+		<span>Récapitulatif des examens d'habilitation</span>
+	</h2>
+</md-toolbar>
+
+<md-subheader class="md-no-sticky">Création d'un nouveau test</md-subheader>
+<div layout="row">
+	<div flex="16" layout-align="start center">
+		<md-input-container class="md-block">
+			<label>Niveau de l'habilitation</label>
+			<md-select name="niveau" ng-model="niveau" required>
+				<md-option value="0">B0</md-option>
+				<md-option value="1">B1</md-option>
+				<md-option value="2">B2</md-option>
+			</md-select>
+		</md-input-cointainer>
+	</div>
+	<div flex layout="row" layout-align="end center">
+		<md-button class="md-raised" ng-disabled="!niveau" ng-click="createNewExam()">Créer un nouveau test</md-button>
+	</div>
+</div>
+<md-divider ng-if="!$last"></md-divider>
+
+<md-subheader class="md-no-sticky md-warn">Liste des tests non finis</md-subheader>
+<md-content>
+	<md-list>
+		<md-list-item class="md-3-line" ng-repeat="unfinishedExam in listOfUnfinishedExams">
+			<div class="md-list-item-text" layout="column">
+				<h3>Test {{unfinishedExam.Id}}</h3>
+				<h4>Commencé le {{unfinishedExam.DebutExam}}</h4>
+				<h4>Niveau: {{unfinishedExam.Niveau}}</h4>
+			</div>
+			<div class="md-list-item-text">
+				<div layout="row" layout-align="end center">
+					<md-button class="md-raised md-primary">Reprendre</md-button>
+					<md-button class="md-raised md-warn">Cloturer</md-button>
+				</div>
+			</div>
+			<md-divider ng-if="!$last"></md-divider>
+		</md-list-item>
+	</md-list>
+</md-content>
+
+<md-subheader class="md-no-sticky md-primary">Liste des tests terminés</md-subheader>
+<md-content>
+	<md-list>
+		<md-list-item class="md-3-line" ng-repeat="finishedExam in listOfFinishedExams">
+			<div class="md-list-item-text">
+				<h3>Test {{finishedExam.Id}}</h3>
+				<h4>Commencé le {{finishedExam.DebutExam}}</h4>
+				<h4>Fini le {{finishedExam.FinExam}}</h4>
+				<h4>Niveau: {{finishedExam.Niveau}}</h4>
+			</div>
+			<div class="md-list-item-text">
+				<div layout="row" layout-align="end center">
+					Note: {{finishedExam.Score}}/20
+				</div>
+			</div>
+		</md-list-item>
+	</md-list>
+</md-content>
+
+zzzz
+
+<p>
+	<img src="./img/coin.png" alt="des coins" />
+</p>
