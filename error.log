@@ -2980,3 +2980,473 @@ CreateNewExam Exam après enregistrement: {1 2015-12-15 23:10:12.318327676 +0100
 CreateNewExam Questions: [{1 Le courant électrique est-il dangereux pour le corps humain ? puces B0} {2 Quelle est la formule de la puissance dissipée par effet joule ? puces B0} {3 Que peut provoquer un accident d'origine électrique ? checkbox B0} {4 Quelle est l'intensité d'un circuit électrique monophasé ayant une résistance électrique de 50 &Omega; ? checkbox B0} {5 Les ouvrages électriques sont classés en trois grands domaines de tension: la très basse tension (TBT), la basse tension (BT) et la haute tension (HT). En courant alternatif, quelles sont les limites de la BT ? checkbox B0} {6 En cas d’accident d’origine électrique, quelle est la première opération à réaliser: puces B0} {7 Comment reconnaissez-vous un local « d’accès réservé aux électriciens » ? checkbox B0} {8 Principalement, que protège un dispositif différentiel à haute sensibilité de 30 mA ? checkbox B0}]
 CreateNewExam Questions finales: map[4:5 6:7 7:8 0:1 3:4]
 CreateNewExam Taille de questions: 5
+loadConfig "debug" is selected
+loadConfig loadConfig func:
+loadConfig   path: cfg
+loadConfig   filename: server
+loadConfig   logtype in file config is "debug"
+Initdb db path: .
+Initdb db filename: temperature.db
+Initdb db: temperature.db
+startApp Port: 8080
+ListOfUnfinishedExams User: julien
+ListOfUnfinishedExams Taille: 0 | Exams: []
+ListOfFinishedExams User: julien
+ListOfFinishedExams Taille: 0 | Exams: []
+CreateNewExam Utilisateur: julien
+CreateNewExam Niveau: 0
+CreateNewExam Id: 1
+CreateNewExam Exam après enregistrement: {2 2015-12-16 10:57:44.884063491 +0100 CET 0001-01-01 00:00:00 +0000 UTC 0 false 0 1}
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam Questions: []
+loadConfig "debug" is selected
+loadConfig loadConfig func:
+loadConfig   path: cfg
+loadConfig   filename: server
+loadConfig   logtype in file config is "debug"
+Initdb db path: .
+Initdb db filename: temperature.db
+Initdb db: temperature.db
+startApp Port: 8080
+ListOfUnfinishedExams User: julien
+ListOfUnfinishedExams Taille: 0 | Exams: []
+ListOfFinishedExams User: julien
+ListOfFinishedExams Taille: 0 | Exams: []
+CreateNewExam Utilisateur: julien
+CreateNewExam Niveau: 0
+CreateNewExam Id: 1
+CreateNewExam Exam après enregistrement: {3 2015-12-16 11:45:11.378200711 +0100 CET 0001-01-01 00:00:00 +0000 UTC 0 false 0 1}
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam Questions: [{1 Le courant électrique est-il dangereux pour le corps humain ? puces B0} {2 Quelle est la formule de la puissance dissipée par effet joule ? puces B0} {3 Que peut provoquer un accident d'origine électrique ? checkbox B0} {4 Quelle est l'intensité d'un circuit électrique monophasé ayant une résistance électrique de 50 &Omega; ? checkbox B0} {5 Les ouvrages électriques sont classés en trois grands domaines de tension: la très basse tension (TBT), la basse tension (BT) et la haute tension (HT). En courant alternatif, quelles sont les limites de la BT ? checkbox B0} {6 En cas d’accident d’origine électrique, quelle est la première opération à réaliser: puces B0} {7 Comment reconnaissez-vous un local « d’accès réservé aux électriciens » ? checkbox B0} {8 Principalement, que protège un dispositif différentiel à haute sensibilité de 30 mA ? checkbox B0}]
+loadConfig "debug" is selected
+loadConfig loadConfig func:
+loadConfig   path: cfg
+loadConfig   filename: server
+loadConfig   logtype in file config is "debug"
+Initdb db path: .
+Initdb db filename: temperature.db
+Initdb db: temperature.db
+startApp Port: 8080
+ListOfUnfinishedExams User: julien
+ListOfUnfinishedExams Taille: 0 | Exams: []
+ListOfFinishedExams User: julien
+ListOfFinishedExams Taille: 0 | Exams: []
+CreateNewExam Utilisateur: julien
+CreateNewExam Niveau: 0
+CreateNewExam Id: 1
+CreateNewExam Exam après enregistrement: {4 2015-12-17 09:22:17.154465168 +0100 CET 0001-01-01 00:00:00 +0000 UTC 0 false 0 1}
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam Questions: [{1 Le courant électrique est-il dangereux pour le corps humain ? puces B0} {2 Quelle est la formule de la puissance dissipée par effet joule ? puces B0} {3 Que peut provoquer un accident d'origine électrique ? checkbox B0} {4 Quelle est l'intensité d'un circuit électrique monophasé ayant une résistance électrique de 50 &Omega; ? checkbox B0} {5 Les ouvrages électriques sont classés en trois grands domaines de tension: la très basse tension (TBT), la basse tension (BT) et la haute tension (HT). En courant alternatif, quelles sont les limites de la BT ? checkbox B0} {6 En cas d’accident d’origine électrique, quelle est la première opération à réaliser: puces B0} {7 Comment reconnaissez-vous un local « d’accès réservé aux électriciens » ? checkbox B0} {8 Principalement, que protège un dispositif différentiel à haute sensibilité de 30 mA ? checkbox B0}]
+CreateNewExam Utilisateur: julien
+CreateNewExam Niveau: 0
+CreateNewExam Id: 1
+CreateNewExam Exam après enregistrement: {5 2015-12-17 09:22:19.533088547 +0100 CET 0001-01-01 00:00:00 +0000 UTC 0 false 0 1}
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam Questions: [{1 Le courant électrique est-il dangereux pour le corps humain ? puces B0} {2 Quelle est la formule de la puissance dissipée par effet joule ? puces B0} {3 Que peut provoquer un accident d'origine électrique ? checkbox B0} {4 Quelle est l'intensité d'un circuit électrique monophasé ayant une résistance électrique de 50 &Omega; ? checkbox B0} {5 Les ouvrages électriques sont classés en trois grands domaines de tension: la très basse tension (TBT), la basse tension (BT) et la haute tension (HT). En courant alternatif, quelles sont les limites de la BT ? checkbox B0} {6 En cas d’accident d’origine électrique, quelle est la première opération à réaliser: puces B0} {7 Comment reconnaissez-vous un local « d’accès réservé aux électriciens » ? checkbox B0} {8 Principalement, que protège un dispositif différentiel à haute sensibilité de 30 mA ? checkbox B0}]
+CreateNewExam Utilisateur: julien
+CreateNewExam Niveau: 0
+CreateNewExam Id: 1
+CreateNewExam Exam après enregistrement: {6 2015-12-17 09:22:21.606839451 +0100 CET 0001-01-01 00:00:00 +0000 UTC 0 false 0 1}
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam Questions: [{1 Le courant électrique est-il dangereux pour le corps humain ? puces B0} {2 Quelle est la formule de la puissance dissipée par effet joule ? puces B0} {3 Que peut provoquer un accident d'origine électrique ? checkbox B0} {4 Quelle est l'intensité d'un circuit électrique monophasé ayant une résistance électrique de 50 &Omega; ? checkbox B0} {5 Les ouvrages électriques sont classés en trois grands domaines de tension: la très basse tension (TBT), la basse tension (BT) et la haute tension (HT). En courant alternatif, quelles sont les limites de la BT ? checkbox B0} {6 En cas d’accident d’origine électrique, quelle est la première opération à réaliser: puces B0} {7 Comment reconnaissez-vous un local « d’accès réservé aux électriciens » ? checkbox B0} {8 Principalement, que protège un dispositif différentiel à haute sensibilité de 30 mA ? checkbox B0}]
+ListOfUnfinishedExams User: julien
+ListOfUnfinishedExams Taille: 0 | Exams: []
+ListOfFinishedExams User: julien
+ListOfFinishedExams Taille: 0 | Exams: []
+CreateNewExam Utilisateur: julien
+CreateNewExam Niveau: 0
+CreateNewExam Id: 1
+CreateNewExam Exam après enregistrement: {7 2015-12-17 09:22:39.87373911 +0100 CET 0001-01-01 00:00:00 +0000 UTC 0 false 0 1}
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam Questions: [{1 Le courant électrique est-il dangereux pour le corps humain ? puces B0} {2 Quelle est la formule de la puissance dissipée par effet joule ? puces B0} {3 Que peut provoquer un accident d'origine électrique ? checkbox B0} {4 Quelle est l'intensité d'un circuit électrique monophasé ayant une résistance électrique de 50 &Omega; ? checkbox B0} {5 Les ouvrages électriques sont classés en trois grands domaines de tension: la très basse tension (TBT), la basse tension (BT) et la haute tension (HT). En courant alternatif, quelles sont les limites de la BT ? checkbox B0} {6 En cas d’accident d’origine électrique, quelle est la première opération à réaliser: puces B0} {7 Comment reconnaissez-vous un local « d’accès réservé aux électriciens » ? checkbox B0} {8 Principalement, que protège un dispositif différentiel à haute sensibilité de 30 mA ? checkbox B0}]
+CreateNewExam Utilisateur: julien
+CreateNewExam Niveau: 0
+CreateNewExam Id: 1
+CreateNewExam Exam après enregistrement: {8 2015-12-17 09:22:41.691370532 +0100 CET 0001-01-01 00:00:00 +0000 UTC 0 false 0 1}
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam Questions: [{1 Le courant électrique est-il dangereux pour le corps humain ? puces B0} {2 Quelle est la formule de la puissance dissipée par effet joule ? puces B0} {3 Que peut provoquer un accident d'origine électrique ? checkbox B0} {4 Quelle est l'intensité d'un circuit électrique monophasé ayant une résistance électrique de 50 &Omega; ? checkbox B0} {5 Les ouvrages électriques sont classés en trois grands domaines de tension: la très basse tension (TBT), la basse tension (BT) et la haute tension (HT). En courant alternatif, quelles sont les limites de la BT ? checkbox B0} {6 En cas d’accident d’origine électrique, quelle est la première opération à réaliser: puces B0} {7 Comment reconnaissez-vous un local « d’accès réservé aux électriciens » ? checkbox B0} {8 Principalement, que protège un dispositif différentiel à haute sensibilité de 30 mA ? checkbox B0}]
+CreateNewExam Utilisateur: julien
+CreateNewExam Niveau: 0
+CreateNewExam Id: 1
+CreateNewExam Exam après enregistrement: {9 2015-12-17 09:22:43.677374586 +0100 CET 0001-01-01 00:00:00 +0000 UTC 0 false 0 1}
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam Questions: [{1 Le courant électrique est-il dangereux pour le corps humain ? puces B0} {2 Quelle est la formule de la puissance dissipée par effet joule ? puces B0} {3 Que peut provoquer un accident d'origine électrique ? checkbox B0} {4 Quelle est l'intensité d'un circuit électrique monophasé ayant une résistance électrique de 50 &Omega; ? checkbox B0} {5 Les ouvrages électriques sont classés en trois grands domaines de tension: la très basse tension (TBT), la basse tension (BT) et la haute tension (HT). En courant alternatif, quelles sont les limites de la BT ? checkbox B0} {6 En cas d’accident d’origine électrique, quelle est la première opération à réaliser: puces B0} {7 Comment reconnaissez-vous un local « d’accès réservé aux électriciens » ? checkbox B0} {8 Principalement, que protège un dispositif différentiel à haute sensibilité de 30 mA ? checkbox B0}]
+CreateNewExam Utilisateur: julien
+CreateNewExam Niveau: 0
+CreateNewExam Id: 1
+CreateNewExam Exam après enregistrement: {10 2015-12-17 09:22:46.03534251 +0100 CET 0001-01-01 00:00:00 +0000 UTC 0 false 0 1}
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam Questions: [{1 Le courant électrique est-il dangereux pour le corps humain ? puces B0} {2 Quelle est la formule de la puissance dissipée par effet joule ? puces B0} {3 Que peut provoquer un accident d'origine électrique ? checkbox B0} {4 Quelle est l'intensité d'un circuit électrique monophasé ayant une résistance électrique de 50 &Omega; ? checkbox B0} {5 Les ouvrages électriques sont classés en trois grands domaines de tension: la très basse tension (TBT), la basse tension (BT) et la haute tension (HT). En courant alternatif, quelles sont les limites de la BT ? checkbox B0} {6 En cas d’accident d’origine électrique, quelle est la première opération à réaliser: puces B0} {7 Comment reconnaissez-vous un local « d’accès réservé aux électriciens » ? checkbox B0} {8 Principalement, que protège un dispositif différentiel à haute sensibilité de 30 mA ? checkbox B0}]
+ListOfUnfinishedExams User: julien
+ListOfUnfinishedExams Taille: 0 | Exams: []
+ListOfFinishedExams User: julien
+ListOfFinishedExams Taille: 0 | Exams: []
+CreateNewExam Utilisateur: julien
+CreateNewExam Niveau: 0
+CreateNewExam Id: 1
+CreateNewExam Exam après enregistrement: {11 2015-12-17 09:22:55.859784959 +0100 CET 0001-01-01 00:00:00 +0000 UTC 0 false 0 1}
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam Questions: [{1 Le courant électrique est-il dangereux pour le corps humain ? puces B0} {2 Quelle est la formule de la puissance dissipée par effet joule ? puces B0} {3 Que peut provoquer un accident d'origine électrique ? checkbox B0} {4 Quelle est l'intensité d'un circuit électrique monophasé ayant une résistance électrique de 50 &Omega; ? checkbox B0} {5 Les ouvrages électriques sont classés en trois grands domaines de tension: la très basse tension (TBT), la basse tension (BT) et la haute tension (HT). En courant alternatif, quelles sont les limites de la BT ? checkbox B0} {6 En cas d’accident d’origine électrique, quelle est la première opération à réaliser: puces B0} {7 Comment reconnaissez-vous un local « d’accès réservé aux électriciens » ? checkbox B0} {8 Principalement, que protège un dispositif différentiel à haute sensibilité de 30 mA ? checkbox B0}]
+CreateNewExam Utilisateur: julien
+CreateNewExam Niveau: 0
+CreateNewExam Id: 1
+CreateNewExam Exam après enregistrement: {12 2015-12-17 09:22:57.043104993 +0100 CET 0001-01-01 00:00:00 +0000 UTC 0 false 0 1}
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam Questions: [{1 Le courant électrique est-il dangereux pour le corps humain ? puces B0} {2 Quelle est la formule de la puissance dissipée par effet joule ? puces B0} {3 Que peut provoquer un accident d'origine électrique ? checkbox B0} {4 Quelle est l'intensité d'un circuit électrique monophasé ayant une résistance électrique de 50 &Omega; ? checkbox B0} {5 Les ouvrages électriques sont classés en trois grands domaines de tension: la très basse tension (TBT), la basse tension (BT) et la haute tension (HT). En courant alternatif, quelles sont les limites de la BT ? checkbox B0} {6 En cas d’accident d’origine électrique, quelle est la première opération à réaliser: puces B0} {7 Comment reconnaissez-vous un local « d’accès réservé aux électriciens » ? checkbox B0} {8 Principalement, que protège un dispositif différentiel à haute sensibilité de 30 mA ? checkbox B0}]
+CreateNewExam Utilisateur: julien
+CreateNewExam Niveau: 0
+CreateNewExam Utilisateur: julien
+CreateNewExam Niveau: 0
+CreateNewExam Id: 1
+CreateNewExam Exam après enregistrement: {13 2015-12-17 09:23:01.220848946 +0100 CET 0001-01-01 00:00:00 +0000 UTC 0 false 0 1}
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam Questions: [{1 Le courant électrique est-il dangereux pour le corps humain ? puces B0} {2 Quelle est la formule de la puissance dissipée par effet joule ? puces B0} {3 Que peut provoquer un accident d'origine électrique ? checkbox B0} {4 Quelle est l'intensité d'un circuit électrique monophasé ayant une résistance électrique de 50 &Omega; ? checkbox B0} {5 Les ouvrages électriques sont classés en trois grands domaines de tension: la très basse tension (TBT), la basse tension (BT) et la haute tension (HT). En courant alternatif, quelles sont les limites de la BT ? checkbox B0} {6 En cas d’accident d’origine électrique, quelle est la première opération à réaliser: puces B0} {7 Comment reconnaissez-vous un local « d’accès réservé aux électriciens » ? checkbox B0} {8 Principalement, que protège un dispositif différentiel à haute sensibilité de 30 mA ? checkbox B0}]
+CreateNewExam Id: 1
+CreateNewExam Exam après enregistrement: {14 2015-12-17 09:23:03.38870024 +0100 CET 0001-01-01 00:00:00 +0000 UTC 0 false 0 1}
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam Questions: [{1 Le courant électrique est-il dangereux pour le corps humain ? puces B0} {2 Quelle est la formule de la puissance dissipée par effet joule ? puces B0} {3 Que peut provoquer un accident d'origine électrique ? checkbox B0} {4 Quelle est l'intensité d'un circuit électrique monophasé ayant une résistance électrique de 50 &Omega; ? checkbox B0} {5 Les ouvrages électriques sont classés en trois grands domaines de tension: la très basse tension (TBT), la basse tension (BT) et la haute tension (HT). En courant alternatif, quelles sont les limites de la BT ? checkbox B0} {6 En cas d’accident d’origine électrique, quelle est la première opération à réaliser: puces B0} {7 Comment reconnaissez-vous un local « d’accès réservé aux électriciens » ? checkbox B0} {8 Principalement, que protège un dispositif différentiel à haute sensibilité de 30 mA ? checkbox B0}]
+loadConfig "debug" is selected
+loadConfig loadConfig func:
+loadConfig   path: cfg
+loadConfig   filename: server
+loadConfig   logtype in file config is "debug"
+Initdb db path: .
+Initdb db filename: temperature.db
+Initdb db: temperature.db
+startApp Port: 8080
+ListOfUnfinishedExams User: julien
+ListOfUnfinishedExams Taille: 0 | Exams: []
+ListOfFinishedExams User: julien
+ListOfFinishedExams Taille: 0 | Exams: []
+CreateNewExam Utilisateur: julien
+CreateNewExam Niveau: 0
+CreateNewExam Id: 1
+CreateNewExam Exam après enregistrement: {1 2015-12-17 10:32:43.753983477 +0100 CET 0001-01-01 00:00:00 +0000 UTC 0 false 0 1}
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam Questions: [{1 Le courant électrique est-il dangereux pour le corps humain ? puces B0} {2 Quelle est la formule de la puissance dissipée par effet joule ? puces B0} {3 Que peut provoquer un accident d'origine électrique ? checkbox B0} {4 Quelle est l'intensité d'un circuit électrique monophasé ayant une résistance électrique de 50 &Omega; ? checkbox B0} {5 Les ouvrages électriques sont classés en trois grands domaines de tension: la très basse tension (TBT), la basse tension (BT) et la haute tension (HT). En courant alternatif, quelles sont les limites de la BT ? checkbox B0} {6 En cas d’accident d’origine électrique, quelle est la première opération à réaliser: puces B0} {7 Comment reconnaissez-vous un local « d’accès réservé aux électriciens » ? checkbox B0} {8 Principalement, que protège un dispositif différentiel à haute sensibilité de 30 mA ? checkbox B0}]
+CreateNewExam Utilisateur: julien
+CreateNewExam Niveau: 0
+CreateNewExam Id: 1
+CreateNewExam Exam après enregistrement: {2 2015-12-17 10:32:45.77387156 +0100 CET 0001-01-01 00:00:00 +0000 UTC 0 false 0 1}
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam Questions: [{1 Le courant électrique est-il dangereux pour le corps humain ? puces B0} {2 Quelle est la formule de la puissance dissipée par effet joule ? puces B0} {3 Que peut provoquer un accident d'origine électrique ? checkbox B0} {4 Quelle est l'intensité d'un circuit électrique monophasé ayant une résistance électrique de 50 &Omega; ? checkbox B0} {5 Les ouvrages électriques sont classés en trois grands domaines de tension: la très basse tension (TBT), la basse tension (BT) et la haute tension (HT). En courant alternatif, quelles sont les limites de la BT ? checkbox B0} {6 En cas d’accident d’origine électrique, quelle est la première opération à réaliser: puces B0} {7 Comment reconnaissez-vous un local « d’accès réservé aux électriciens » ? checkbox B0} {8 Principalement, que protège un dispositif différentiel à haute sensibilité de 30 mA ? checkbox B0}]
+CreateNewExam Utilisateur: julien
+CreateNewExam Niveau: 0
+CreateNewExam Id: 1
+CreateNewExam Exam après enregistrement: {3 2015-12-17 10:32:47.448923446 +0100 CET 0001-01-01 00:00:00 +0000 UTC 0 false 0 1}
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam Questions: [{1 Le courant électrique est-il dangereux pour le corps humain ? puces B0} {2 Quelle est la formule de la puissance dissipée par effet joule ? puces B0} {3 Que peut provoquer un accident d'origine électrique ? checkbox B0} {4 Quelle est l'intensité d'un circuit électrique monophasé ayant une résistance électrique de 50 &Omega; ? checkbox B0} {5 Les ouvrages électriques sont classés en trois grands domaines de tension: la très basse tension (TBT), la basse tension (BT) et la haute tension (HT). En courant alternatif, quelles sont les limites de la BT ? checkbox B0} {6 En cas d’accident d’origine électrique, quelle est la première opération à réaliser: puces B0} {7 Comment reconnaissez-vous un local « d’accès réservé aux électriciens » ? checkbox B0} {8 Principalement, que protège un dispositif différentiel à haute sensibilité de 30 mA ? checkbox B0}]
+CreateNewExam Utilisateur: julien
+CreateNewExam Niveau: 0
+CreateNewExam Id: 1
+CreateNewExam Exam après enregistrement: {4 2015-12-17 10:32:49.177482306 +0100 CET 0001-01-01 00:00:00 +0000 UTC 0 false 0 1}
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam Questions: [{1 Le courant électrique est-il dangereux pour le corps humain ? puces B0} {2 Quelle est la formule de la puissance dissipée par effet joule ? puces B0} {3 Que peut provoquer un accident d'origine électrique ? checkbox B0} {4 Quelle est l'intensité d'un circuit électrique monophasé ayant une résistance électrique de 50 &Omega; ? checkbox B0} {5 Les ouvrages électriques sont classés en trois grands domaines de tension: la très basse tension (TBT), la basse tension (BT) et la haute tension (HT). En courant alternatif, quelles sont les limites de la BT ? checkbox B0} {6 En cas d’accident d’origine électrique, quelle est la première opération à réaliser: puces B0} {7 Comment reconnaissez-vous un local « d’accès réservé aux électriciens » ? checkbox B0} {8 Principalement, que protège un dispositif différentiel à haute sensibilité de 30 mA ? checkbox B0}]
+ListOfUnfinishedExams User: julien
+ListOfUnfinishedExams Taille: 0 | Exams: []
+ListOfFinishedExams User: julien
+ListOfFinishedExams Taille: 0 | Exams: []
+CreateNewExam Utilisateur: julien
+CreateNewExam Niveau: 0
+CreateNewExam Id: 1
+CreateNewExam Exam après enregistrement: {5 2015-12-17 10:33:23.372538325 +0100 CET 0001-01-01 00:00:00 +0000 UTC 0 false 0 1}
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam Questions: [{1 Le courant électrique est-il dangereux pour le corps humain ? puces B0} {2 Quelle est la formule de la puissance dissipée par effet joule ? puces B0} {3 Que peut provoquer un accident d'origine électrique ? checkbox B0} {4 Quelle est l'intensité d'un circuit électrique monophasé ayant une résistance électrique de 50 &Omega; ? checkbox B0} {5 Les ouvrages électriques sont classés en trois grands domaines de tension: la très basse tension (TBT), la basse tension (BT) et la haute tension (HT). En courant alternatif, quelles sont les limites de la BT ? checkbox B0} {6 En cas d’accident d’origine électrique, quelle est la première opération à réaliser: puces B0} {7 Comment reconnaissez-vous un local « d’accès réservé aux électriciens » ? checkbox B0} {8 Principalement, que protège un dispositif différentiel à haute sensibilité de 30 mA ? checkbox B0}]
+CreateNewExam Utilisateur: julien
+CreateNewExam Niveau: 0
+CreateNewExam Id: 1
+CreateNewExam Exam après enregistrement: {6 2015-12-17 10:33:25.223013549 +0100 CET 0001-01-01 00:00:00 +0000 UTC 0 false 0 1}
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam Questions: [{1 Le courant électrique est-il dangereux pour le corps humain ? puces B0} {2 Quelle est la formule de la puissance dissipée par effet joule ? puces B0} {3 Que peut provoquer un accident d'origine électrique ? checkbox B0} {4 Quelle est l'intensité d'un circuit électrique monophasé ayant une résistance électrique de 50 &Omega; ? checkbox B0} {5 Les ouvrages électriques sont classés en trois grands domaines de tension: la très basse tension (TBT), la basse tension (BT) et la haute tension (HT). En courant alternatif, quelles sont les limites de la BT ? checkbox B0} {6 En cas d’accident d’origine électrique, quelle est la première opération à réaliser: puces B0} {7 Comment reconnaissez-vous un local « d’accès réservé aux électriciens » ? checkbox B0} {8 Principalement, que protège un dispositif différentiel à haute sensibilité de 30 mA ? checkbox B0}]
+CreateNewExam Utilisateur: julien
+CreateNewExam Niveau: 0
+CreateNewExam Id: 1
+CreateNewExam Exam après enregistrement: {7 2015-12-17 10:33:26.870566854 +0100 CET 0001-01-01 00:00:00 +0000 UTC 0 false 0 1}
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam Questions: [{1 Le courant électrique est-il dangereux pour le corps humain ? puces B0} {2 Quelle est la formule de la puissance dissipée par effet joule ? puces B0} {3 Que peut provoquer un accident d'origine électrique ? checkbox B0} {4 Quelle est l'intensité d'un circuit électrique monophasé ayant une résistance électrique de 50 &Omega; ? checkbox B0} {5 Les ouvrages électriques sont classés en trois grands domaines de tension: la très basse tension (TBT), la basse tension (BT) et la haute tension (HT). En courant alternatif, quelles sont les limites de la BT ? checkbox B0} {6 En cas d’accident d’origine électrique, quelle est la première opération à réaliser: puces B0} {7 Comment reconnaissez-vous un local « d’accès réservé aux électriciens » ? checkbox B0} {8 Principalement, que protège un dispositif différentiel à haute sensibilité de 30 mA ? checkbox B0}]
+CreateNewExam Utilisateur: julien
+CreateNewExam Niveau: 0
+CreateNewExam Id: 1
+CreateNewExam Exam après enregistrement: {8 2015-12-17 10:33:28.718039112 +0100 CET 0001-01-01 00:00:00 +0000 UTC 0 false 0 1}
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam Questions: [{1 Le courant électrique est-il dangereux pour le corps humain ? puces B0} {2 Quelle est la formule de la puissance dissipée par effet joule ? puces B0} {3 Que peut provoquer un accident d'origine électrique ? checkbox B0} {4 Quelle est l'intensité d'un circuit électrique monophasé ayant une résistance électrique de 50 &Omega; ? checkbox B0} {5 Les ouvrages électriques sont classés en trois grands domaines de tension: la très basse tension (TBT), la basse tension (BT) et la haute tension (HT). En courant alternatif, quelles sont les limites de la BT ? checkbox B0} {6 En cas d’accident d’origine électrique, quelle est la première opération à réaliser: puces B0} {7 Comment reconnaissez-vous un local « d’accès réservé aux électriciens » ? checkbox B0} {8 Principalement, que protège un dispositif différentiel à haute sensibilité de 30 mA ? checkbox B0}]
+CreateNewExam Utilisateur: julien
+CreateNewExam Niveau: 0
+CreateNewExam Id: 1
+CreateNewExam Exam après enregistrement: {9 2015-12-17 10:33:30.969573879 +0100 CET 0001-01-01 00:00:00 +0000 UTC 0 false 0 1}
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam Questions: [{1 Le courant électrique est-il dangereux pour le corps humain ? puces B0} {2 Quelle est la formule de la puissance dissipée par effet joule ? puces B0} {3 Que peut provoquer un accident d'origine électrique ? checkbox B0} {4 Quelle est l'intensité d'un circuit électrique monophasé ayant une résistance électrique de 50 &Omega; ? checkbox B0} {5 Les ouvrages électriques sont classés en trois grands domaines de tension: la très basse tension (TBT), la basse tension (BT) et la haute tension (HT). En courant alternatif, quelles sont les limites de la BT ? checkbox B0} {6 En cas d’accident d’origine électrique, quelle est la première opération à réaliser: puces B0} {7 Comment reconnaissez-vous un local « d’accès réservé aux électriciens » ? checkbox B0} {8 Principalement, que protège un dispositif différentiel à haute sensibilité de 30 mA ? checkbox B0}]
+CreateNewExam Utilisateur: julien
+CreateNewExam Niveau: 0
+CreateNewExam Id: 1
+CreateNewExam Exam après enregistrement: {10 2015-12-17 10:33:33.227297287 +0100 CET 0001-01-01 00:00:00 +0000 UTC 0 false 0 1}
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam Questions: [{1 Le courant électrique est-il dangereux pour le corps humain ? puces B0} {2 Quelle est la formule de la puissance dissipée par effet joule ? puces B0} {3 Que peut provoquer un accident d'origine électrique ? checkbox B0} {4 Quelle est l'intensité d'un circuit électrique monophasé ayant une résistance électrique de 50 &Omega; ? checkbox B0} {5 Les ouvrages électriques sont classés en trois grands domaines de tension: la très basse tension (TBT), la basse tension (BT) et la haute tension (HT). En courant alternatif, quelles sont les limites de la BT ? checkbox B0} {6 En cas d’accident d’origine électrique, quelle est la première opération à réaliser: puces B0} {7 Comment reconnaissez-vous un local « d’accès réservé aux électriciens » ? checkbox B0} {8 Principalement, que protège un dispositif différentiel à haute sensibilité de 30 mA ? checkbox B0}]
+loadConfig "debug" is selected
+loadConfig loadConfig func:
+loadConfig   path: cfg
+loadConfig   filename: server
+loadConfig   logtype in file config is "debug"
+Initdb db path: .
+Initdb db filename: temperature.db
+Initdb db: temperature.db
+startApp Port: 8080
+ListOfUnfinishedExams User: julien
+ListOfUnfinishedExams Taille: 0 | Exams: []
+ListOfFinishedExams User: julien
+ListOfFinishedExams Taille: 0 | Exams: []
+CreateNewExam Utilisateur: julien
+CreateNewExam Niveau: 0
+CreateNewExam Id: 1
+CreateNewExam Exam après enregistrement: {1 2015-12-17 10:35:33.409988385 +0100 CET 0001-01-01 00:00:00 +0000 UTC 0 false 0 1}
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam Questions: [{1 Le courant électrique est-il dangereux pour le corps humain ? puces B0} {2 Quelle est la formule de la puissance dissipée par effet joule ? puces B0} {3 Que peut provoquer un accident d'origine électrique ? checkbox B0} {4 Quelle est l'intensité d'un circuit électrique monophasé ayant une résistance électrique de 50 &Omega; ? checkbox B0} {5 Les ouvrages électriques sont classés en trois grands domaines de tension: la très basse tension (TBT), la basse tension (BT) et la haute tension (HT). En courant alternatif, quelles sont les limites de la BT ? checkbox B0} {6 En cas d’accident d’origine électrique, quelle est la première opération à réaliser: puces B0} {7 Comment reconnaissez-vous un local « d’accès réservé aux électriciens » ? checkbox B0} {8 Principalement, que protège un dispositif différentiel à haute sensibilité de 30 mA ? checkbox B0}]
+CreateNewExam Utilisateur: julien
+CreateNewExam Niveau: 0
+CreateNewExam Id: 1
+CreateNewExam Exam après enregistrement: {2 2015-12-17 10:35:35.991997126 +0100 CET 0001-01-01 00:00:00 +0000 UTC 0 false 0 1}
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam Questions: [{1 Le courant électrique est-il dangereux pour le corps humain ? puces B0} {2 Quelle est la formule de la puissance dissipée par effet joule ? puces B0} {3 Que peut provoquer un accident d'origine électrique ? checkbox B0} {4 Quelle est l'intensité d'un circuit électrique monophasé ayant une résistance électrique de 50 &Omega; ? checkbox B0} {5 Les ouvrages électriques sont classés en trois grands domaines de tension: la très basse tension (TBT), la basse tension (BT) et la haute tension (HT). En courant alternatif, quelles sont les limites de la BT ? checkbox B0} {6 En cas d’accident d’origine électrique, quelle est la première opération à réaliser: puces B0} {7 Comment reconnaissez-vous un local « d’accès réservé aux électriciens » ? checkbox B0} {8 Principalement, que protège un dispositif différentiel à haute sensibilité de 30 mA ? checkbox B0}]
+CreateNewExam Utilisateur: julien
+CreateNewExam Niveau: 0
+CreateNewExam Id: 1
+CreateNewExam Exam après enregistrement: {3 2015-12-17 10:35:38.129561031 +0100 CET 0001-01-01 00:00:00 +0000 UTC 0 false 0 1}
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam Questions: [{1 Le courant électrique est-il dangereux pour le corps humain ? puces B0} {2 Quelle est la formule de la puissance dissipée par effet joule ? puces B0} {3 Que peut provoquer un accident d'origine électrique ? checkbox B0} {4 Quelle est l'intensité d'un circuit électrique monophasé ayant une résistance électrique de 50 &Omega; ? checkbox B0} {5 Les ouvrages électriques sont classés en trois grands domaines de tension: la très basse tension (TBT), la basse tension (BT) et la haute tension (HT). En courant alternatif, quelles sont les limites de la BT ? checkbox B0} {6 En cas d’accident d’origine électrique, quelle est la première opération à réaliser: puces B0} {7 Comment reconnaissez-vous un local « d’accès réservé aux électriciens » ? checkbox B0} {8 Principalement, que protège un dispositif différentiel à haute sensibilité de 30 mA ? checkbox B0}]
+CreateNewExam Utilisateur: julien
+CreateNewExam Niveau: 0
+CreateNewExam Id: 1
+CreateNewExam Exam après enregistrement: {4 2015-12-17 10:35:40.484907569 +0100 CET 0001-01-01 00:00:00 +0000 UTC 0 false 0 1}
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam Questions: [{1 Le courant électrique est-il dangereux pour le corps humain ? puces B0} {2 Quelle est la formule de la puissance dissipée par effet joule ? puces B0} {3 Que peut provoquer un accident d'origine électrique ? checkbox B0} {4 Quelle est l'intensité d'un circuit électrique monophasé ayant une résistance électrique de 50 &Omega; ? checkbox B0} {5 Les ouvrages électriques sont classés en trois grands domaines de tension: la très basse tension (TBT), la basse tension (BT) et la haute tension (HT). En courant alternatif, quelles sont les limites de la BT ? checkbox B0} {6 En cas d’accident d’origine électrique, quelle est la première opération à réaliser: puces B0} {7 Comment reconnaissez-vous un local « d’accès réservé aux électriciens » ? checkbox B0} {8 Principalement, que protège un dispositif différentiel à haute sensibilité de 30 mA ? checkbox B0}]
+CreateNewExam Utilisateur: julien
+CreateNewExam Niveau: 0
+CreateNewExam Id: 1
+CreateNewExam Exam après enregistrement: {5 2015-12-17 10:35:42.467817675 +0100 CET 0001-01-01 00:00:00 +0000 UTC 0 false 0 1}
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam Questions: [{1 Le courant électrique est-il dangereux pour le corps humain ? puces B0} {2 Quelle est la formule de la puissance dissipée par effet joule ? puces B0} {3 Que peut provoquer un accident d'origine électrique ? checkbox B0} {4 Quelle est l'intensité d'un circuit électrique monophasé ayant une résistance électrique de 50 &Omega; ? checkbox B0} {5 Les ouvrages électriques sont classés en trois grands domaines de tension: la très basse tension (TBT), la basse tension (BT) et la haute tension (HT). En courant alternatif, quelles sont les limites de la BT ? checkbox B0} {6 En cas d’accident d’origine électrique, quelle est la première opération à réaliser: puces B0} {7 Comment reconnaissez-vous un local « d’accès réservé aux électriciens » ? checkbox B0} {8 Principalement, que protège un dispositif différentiel à haute sensibilité de 30 mA ? checkbox B0}]
+ListOfUnfinishedExams User: julien
+ListOfUnfinishedExams Taille: 0 | Exams: []
+ListOfFinishedExams User: julien
+ListOfFinishedExams Taille: 0 | Exams: []
+CreateNewExam Utilisateur: julien
+CreateNewExam Niveau: 0
+CreateNewExam Id: 1
+CreateNewExam Exam après enregistrement: {6 2015-12-17 10:35:49.297704507 +0100 CET 0001-01-01 00:00:00 +0000 UTC 0 false 0 1}
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam Questions: [{1 Le courant électrique est-il dangereux pour le corps humain ? puces B0} {2 Quelle est la formule de la puissance dissipée par effet joule ? puces B0} {3 Que peut provoquer un accident d'origine électrique ? checkbox B0} {4 Quelle est l'intensité d'un circuit électrique monophasé ayant une résistance électrique de 50 &Omega; ? checkbox B0} {5 Les ouvrages électriques sont classés en trois grands domaines de tension: la très basse tension (TBT), la basse tension (BT) et la haute tension (HT). En courant alternatif, quelles sont les limites de la BT ? checkbox B0} {6 En cas d’accident d’origine électrique, quelle est la première opération à réaliser: puces B0} {7 Comment reconnaissez-vous un local « d’accès réservé aux électriciens » ? checkbox B0} {8 Principalement, que protège un dispositif différentiel à haute sensibilité de 30 mA ? checkbox B0}]
+CreateNewExam Utilisateur: julien
+CreateNewExam Niveau: 0
+CreateNewExam Id: 1
+CreateNewExam Exam après enregistrement: {7 2015-12-17 10:35:50.974458622 +0100 CET 0001-01-01 00:00:00 +0000 UTC 0 false 0 1}
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam Questions: [{1 Le courant électrique est-il dangereux pour le corps humain ? puces B0} {2 Quelle est la formule de la puissance dissipée par effet joule ? puces B0} {3 Que peut provoquer un accident d'origine électrique ? checkbox B0} {4 Quelle est l'intensité d'un circuit électrique monophasé ayant une résistance électrique de 50 &Omega; ? checkbox B0} {5 Les ouvrages électriques sont classés en trois grands domaines de tension: la très basse tension (TBT), la basse tension (BT) et la haute tension (HT). En courant alternatif, quelles sont les limites de la BT ? checkbox B0} {6 En cas d’accident d’origine électrique, quelle est la première opération à réaliser: puces B0} {7 Comment reconnaissez-vous un local « d’accès réservé aux électriciens » ? checkbox B0} {8 Principalement, que protège un dispositif différentiel à haute sensibilité de 30 mA ? checkbox B0}]
+CreateNewExam Utilisateur: julien
+CreateNewExam Niveau: 0
+CreateNewExam Id: 1
+CreateNewExam Exam après enregistrement: {8 2015-12-17 10:35:52.692204112 +0100 CET 0001-01-01 00:00:00 +0000 UTC 0 false 0 1}
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam Questions: [{1 Le courant électrique est-il dangereux pour le corps humain ? puces B0} {2 Quelle est la formule de la puissance dissipée par effet joule ? puces B0} {3 Que peut provoquer un accident d'origine électrique ? checkbox B0} {4 Quelle est l'intensité d'un circuit électrique monophasé ayant une résistance électrique de 50 &Omega; ? checkbox B0} {5 Les ouvrages électriques sont classés en trois grands domaines de tension: la très basse tension (TBT), la basse tension (BT) et la haute tension (HT). En courant alternatif, quelles sont les limites de la BT ? checkbox B0} {6 En cas d’accident d’origine électrique, quelle est la première opération à réaliser: puces B0} {7 Comment reconnaissez-vous un local « d’accès réservé aux électriciens » ? checkbox B0} {8 Principalement, que protège un dispositif différentiel à haute sensibilité de 30 mA ? checkbox B0}]
+CreateNewExam Utilisateur: julien
+CreateNewExam Niveau: 0
+CreateNewExam Id: 1
+CreateNewExam Exam après enregistrement: {9 2015-12-17 10:35:54.489041721 +0100 CET 0001-01-01 00:00:00 +0000 UTC 0 false 0 1}
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam Questions: [{1 Le courant électrique est-il dangereux pour le corps humain ? puces B0} {2 Quelle est la formule de la puissance dissipée par effet joule ? puces B0} {3 Que peut provoquer un accident d'origine électrique ? checkbox B0} {4 Quelle est l'intensité d'un circuit électrique monophasé ayant une résistance électrique de 50 &Omega; ? checkbox B0} {5 Les ouvrages électriques sont classés en trois grands domaines de tension: la très basse tension (TBT), la basse tension (BT) et la haute tension (HT). En courant alternatif, quelles sont les limites de la BT ? checkbox B0} {6 En cas d’accident d’origine électrique, quelle est la première opération à réaliser: puces B0} {7 Comment reconnaissez-vous un local « d’accès réservé aux électriciens » ? checkbox B0} {8 Principalement, que protège un dispositif différentiel à haute sensibilité de 30 mA ? checkbox B0}]
+CreateNewExam Utilisateur: julien
+CreateNewExam Niveau: 0
+CreateNewExam Id: 1
+CreateNewExam Exam après enregistrement: {10 2015-12-17 10:36:40.096133511 +0100 CET 0001-01-01 00:00:00 +0000 UTC 0 false 0 1}
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam Questions: [{1 Le courant électrique est-il dangereux pour le corps humain ? puces B0} {2 Quelle est la formule de la puissance dissipée par effet joule ? puces B0} {3 Que peut provoquer un accident d'origine électrique ? checkbox B0} {4 Quelle est l'intensité d'un circuit électrique monophasé ayant une résistance électrique de 50 &Omega; ? checkbox B0} {5 Les ouvrages électriques sont classés en trois grands domaines de tension: la très basse tension (TBT), la basse tension (BT) et la haute tension (HT). En courant alternatif, quelles sont les limites de la BT ? checkbox B0} {6 En cas d’accident d’origine électrique, quelle est la première opération à réaliser: puces B0} {7 Comment reconnaissez-vous un local « d’accès réservé aux électriciens » ? checkbox B0} {8 Principalement, que protège un dispositif différentiel à haute sensibilité de 30 mA ? checkbox B0}]
+CreateNewExam Utilisateur: julien
+CreateNewExam Niveau: 0
+CreateNewExam Id: 1
+CreateNewExam Exam après enregistrement: {11 2015-12-17 10:40:10.029864968 +0100 CET 0001-01-01 00:00:00 +0000 UTC 0 false 0 1}
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam --------------------------------------------------------------------------
+CreateNewExam Questions: [{1 Le courant électrique est-il dangereux pour le corps humain ? puces B0} {2 Quelle est la formule de la puissance dissipée par effet joule ? puces B0} {3 Que peut provoquer un accident d'origine électrique ? checkbox B0} {4 Quelle est l'intensité d'un circuit électrique monophasé ayant une résistance électrique de 50 &Omega; ? checkbox B0} {5 Les ouvrages électriques sont classés en trois grands domaines de tension: la très basse tension (TBT), la basse tension (BT) et la haute tension (HT). En courant alternatif, quelles sont les limites de la BT ? checkbox B0} {6 En cas d’accident d’origine électrique, quelle est la première opération à réaliser: puces B0} {7 Comment reconnaissez-vous un local « d’accès réservé aux électriciens » ? checkbox B0} {8 Principalement, que protège un dispositif différentiel à haute sensibilité de 30 mA ? checkbox B0}]
+loadConfig "debug" is selected
+loadConfig loadConfig func:
+loadConfig   path: cfg
+loadConfig   filename: server
+loadConfig   logtype in file config is "debug"
+Initdb db path: .
+Initdb db filename: temperature.db
+Initdb db: temperature.db
+startApp Port: 8080
+ListOfUnfinishedExams User: julien
+ListOfUnfinishedExams Taille: 0 | Exams: []
+ListOfFinishedExams User: julien
+ListOfFinishedExams Taille: 0 | Exams: []
+CreateNewExam Utilisateur: julien
+CreateNewExam Niveau: 0
+CreateNewExam Id: 1
+CreateNewExam Exam après enregistrement: {1 2015-12-17 16:15:52.308468043 +0100 CET 0001-01-01 00:00:00 +0000 UTC 0 false 0 1}
+CreateNewExam Questions: [{1 Le courant électrique est-il dangereux pour le corps humain ? puces B0} {2 Quelle est la formule de la puissance dissipée par effet joule ? puces B0} {3 Que peut provoquer un accident d'origine électrique ? checkbox B0} {4 Quelle est l'intensité d'un circuit électrique monophasé ayant une résistance électrique de 50 &Omega; ? checkbox B0} {5 Les ouvrages électriques sont classés en trois grands domaines de tension: la très basse tension (TBT), la basse tension (BT) et la haute tension (HT). En courant alternatif, quelles sont les limites de la BT ? checkbox B0} {6 En cas d’accident d’origine électrique, quelle est la première opération à réaliser: puces B0} {7 Comment reconnaissez-vous un local « d’accès réservé aux électriciens » ? checkbox B0} {8 Principalement, que protège un dispositif différentiel à haute sensibilité de 30 mA ? checkbox B0}]
+CreateNewExam Question à supprimer: 1
+CreateNewExam Question à supprimer: 2
+CreateNewExam Question à supprimer: 5
+loadConfig "debug" is selected
+loadConfig loadConfig func:
+loadConfig   path: cfg
+loadConfig   filename: server
+loadConfig   logtype in file config is "debug"
+Initdb db path: .
+Initdb db filename: temperature.db
+Initdb db: temperature.db
+startApp Port: 8080
+ListOfUnfinishedExams User: julien
+ListOfUnfinishedExams Taille: 0 | Exams: []
+ListOfFinishedExams User: julien
+ListOfFinishedExams Taille: 0 | Exams: []
+CreateNewExam Utilisateur: julien
+CreateNewExam Niveau: 0
+CreateNewExam Id: 1
+CreateNewExam Exam après enregistrement: {2 2015-12-17 16:23:39.681060737 +0100 CET 0001-01-01 00:00:00 +0000 UTC 0 false 0 1}
+CreateNewExam Questions: [{1 Le courant électrique est-il dangereux pour le corps humain ? puces B0} {2 Quelle est la formule de la puissance dissipée par effet joule ? puces B0} {3 Que peut provoquer un accident d'origine électrique ? checkbox B0} {4 Quelle est l'intensité d'un circuit électrique monophasé ayant une résistance électrique de 50 &Omega; ? checkbox B0} {5 Les ouvrages électriques sont classés en trois grands domaines de tension: la très basse tension (TBT), la basse tension (BT) et la haute tension (HT). En courant alternatif, quelles sont les limites de la BT ? checkbox B0} {6 En cas d’accident d’origine électrique, quelle est la première opération à réaliser: puces B0} {7 Comment reconnaissez-vous un local « d’accès réservé aux électriciens » ? checkbox B0} {8 Principalement, que protège un dispositif différentiel à haute sensibilité de 30 mA ? checkbox B0}]
+CreateNewExam Question Id map avant suppression: map[6:7 7:8 0:1 1:2 2:3 3:4 4:5 5:6]
+CreateNewExam Question à supprimer: 1
+CreateNewExam Question à supprimer: 2
+CreateNewExam Question à supprimer: 5
+CreateNewExam QuestionIdMap après suppression: map[7:8 0:1 3:4 4:5 6:7]
+CreateNewExam Utilisateur: julien
+CreateNewExam Niveau: 0
+CreateNewExam Id: 1
+CreateNewExam Exam après enregistrement: {3 2015-12-17 16:29:43.370220218 +0100 CET 0001-01-01 00:00:00 +0000 UTC 0 false 0 1}
+CreateNewExam Questions: [{1 Le courant électrique est-il dangereux pour le corps humain ? puces B0} {2 Quelle est la formule de la puissance dissipée par effet joule ? puces B0} {3 Que peut provoquer un accident d'origine électrique ? checkbox B0} {4 Quelle est l'intensité d'un circuit électrique monophasé ayant une résistance électrique de 50 &Omega; ? checkbox B0} {5 Les ouvrages électriques sont classés en trois grands domaines de tension: la très basse tension (TBT), la basse tension (BT) et la haute tension (HT). En courant alternatif, quelles sont les limites de la BT ? checkbox B0} {6 En cas d’accident d’origine électrique, quelle est la première opération à réaliser: puces B0} {7 Comment reconnaissez-vous un local « d’accès réservé aux électriciens » ? checkbox B0} {8 Principalement, que protège un dispositif différentiel à haute sensibilité de 30 mA ? checkbox B0}]
+CreateNewExam Question Id map avant suppression: map[1:2 2:3 3:4 4:5 5:6 6:7 7:8 0:1]
+CreateNewExam Question à supprimer: 3
+CreateNewExam Question à supprimer: 6
+CreateNewExam Question à supprimer: 0
+CreateNewExam QuestionIdMap après suppression: map[5:6 7:8 1:2 2:3 4:5]
+loadConfig "debug" is selected
+loadConfig loadConfig func:
+loadConfig   path: cfg
+loadConfig   filename: server
+loadConfig   logtype in file config is "debug"
+Initdb db path: .
+Initdb db filename: temperature.db
+Initdb db: temperature.db
+startApp Port: 8080
+ListOfUnfinishedExams User: julien
+ListOfUnfinishedExams Taille: 0 | Exams: []
+ListOfFinishedExams User: julien
+ListOfFinishedExams Taille: 0 | Exams: []
+CreateNewExam Utilisateur: julien
+CreateNewExam Niveau: 0
+CreateNewExam Id: 1
+CreateNewExam Exam après enregistrement: {4 2015-12-17 16:30:52.914082911 +0100 CET 0001-01-01 00:00:00 +0000 UTC 0 false 0 1}
+CreateNewExam Questions: [{1 Le courant électrique est-il dangereux pour le corps humain ? puces B0} {2 Quelle est la formule de la puissance dissipée par effet joule ? puces B0} {3 Que peut provoquer un accident d'origine électrique ? checkbox B0} {4 Quelle est l'intensité d'un circuit électrique monophasé ayant une résistance électrique de 50 &Omega; ? checkbox B0} {5 Les ouvrages électriques sont classés en trois grands domaines de tension: la très basse tension (TBT), la basse tension (BT) et la haute tension (HT). En courant alternatif, quelles sont les limites de la BT ? checkbox B0} {6 En cas d’accident d’origine électrique, quelle est la première opération à réaliser: puces B0} {7 Comment reconnaissez-vous un local « d’accès réservé aux électriciens » ? checkbox B0} {8 Principalement, que protège un dispositif différentiel à haute sensibilité de 30 mA ? checkbox B0}]
+CreateNewExam Question Id map avant suppression: map[1:2 2:3 3:4 4:5 5:6 6:7 7:8 0:1]
+CreateNewExam Question à supprimer: 1
+CreateNewExam Question à supprimer: 2
+CreateNewExam Question à supprimer: 5
+CreateNewExam QuestionIdMap après suppression: map[4:5 6:7 7:8 0:1 3:4]
+loadConfig "debug" is selected
+loadConfig loadConfig func:
+loadConfig   path: cfg
+loadConfig   filename: server
+loadConfig   logtype in file config is "debug"
+Initdb db path: .
+Initdb db filename: temperature.db
+Initdb db: temperature.db
+startApp Port: 8080
+ListOfUnfinishedExams User: julien
+ListOfUnfinishedExams Taille: 0 | Exams: []
+ListOfFinishedExams User: julien
+ListOfFinishedExams Taille: 0 | Exams: []
+CreateNewExam Utilisateur: julien
+CreateNewExam Niveau: 0
+CreateNewExam Id: 1
+CreateNewExam Exam après enregistrement: {5 2015-12-17 17:34:59.308803868 +0100 CET 0001-01-01 00:00:00 +0000 UTC 0 false 0 1}
+CreateNewExam Questions: [{1 Le courant électrique est-il dangereux pour le corps humain ? puces B0} {2 Quelle est la formule de la puissance dissipée par effet joule ? puces B0} {3 Que peut provoquer un accident d'origine électrique ? checkbox B0} {4 Quelle est l'intensité d'un circuit électrique monophasé ayant une résistance électrique de 50 &Omega; ? checkbox B0} {5 Les ouvrages électriques sont classés en trois grands domaines de tension: la très basse tension (TBT), la basse tension (BT) et la haute tension (HT). En courant alternatif, quelles sont les limites de la BT ? checkbox B0} {6 En cas d’accident d’origine électrique, quelle est la première opération à réaliser: puces B0} {7 Comment reconnaissez-vous un local « d’accès réservé aux électriciens » ? checkbox B0} {8 Principalement, que protège un dispositif différentiel à haute sensibilité de 30 mA ? checkbox B0}]
+CreateNewExam Question Id map avant suppression: map[4:5 5:6 6:7 7:8 0:1 1:2 2:3 3:4]
+CreateNewExam Question à supprimer: 7
+CreateNewExam Question à supprimer: 5
+CreateNewExam Question à supprimer: 0
+CreateNewExam QuestionIdMap après suppression: map[1:2 2:3 3:4 4:5 6:7]
+loadConfig "debug" is selected
+loadConfig loadConfig func:
+loadConfig   path: cfg
+loadConfig   filename: server
+loadConfig   logtype in file config is "debug"
+Initdb db path: .
+Initdb db filename: temperature.db
+Initdb db: temperature.db
+startApp Port: 8080
+ListOfUnfinishedExams User: julien
+ListOfUnfinishedExams Taille: 0 | Exams: []
+ListOfFinishedExams User: julien
+ListOfFinishedExams Taille: 0 | Exams: []
+CreateNewExam Utilisateur: julien
+CreateNewExam Niveau: 0
+CreateNewExam Id: 1
+CreateNewExam Exam après enregistrement: {6 2015-12-17 17:35:31.205330391 +0100 CET 0001-01-01 00:00:00 +0000 UTC 0 false 0 1}
+CreateNewExam Questions: [{1 Le courant électrique est-il dangereux pour le corps humain ? puces B0} {2 Quelle est la formule de la puissance dissipée par effet joule ? puces B0} {3 Que peut provoquer un accident d'origine électrique ? checkbox B0} {4 Quelle est l'intensité d'un circuit électrique monophasé ayant une résistance électrique de 50 &Omega; ? checkbox B0} {5 Les ouvrages électriques sont classés en trois grands domaines de tension: la très basse tension (TBT), la basse tension (BT) et la haute tension (HT). En courant alternatif, quelles sont les limites de la BT ? checkbox B0} {6 En cas d’accident d’origine électrique, quelle est la première opération à réaliser: puces B0} {7 Comment reconnaissez-vous un local « d’accès réservé aux électriciens » ? checkbox B0} {8 Principalement, que protège un dispositif différentiel à haute sensibilité de 30 mA ? checkbox B0}]
+CreateNewExam Question Id map avant suppression: map[7:8 0:1 1:2 2:3 3:4 4:5 5:6 6:7]
+CreateNewExam Question à supprimer: 1
+CreateNewExam Question à supprimer: 3
+CreateNewExam Question à supprimer: 3
+CreateNewExam Question à supprimer: 3
+CreateNewExam Question à supprimer: 1
+CreateNewExam Question à supprimer: 5
+CreateNewExam QuestionIdMap après suppression: map[4:5 6:7 7:8 0:1 2:3]
+loadConfig "debug" is selected
+loadConfig loadConfig func:
+loadConfig   path: cfg
+loadConfig   filename: server
+loadConfig   logtype in file config is "debug"
+Initdb db path: .
+Initdb db filename: temperature.db
+Initdb db: temperature.db
+startApp Port: 8080
+ListOfUnfinishedExams User: julien
+ListOfUnfinishedExams Taille: 0 | Exams: []
+ListOfFinishedExams User: julien
+ListOfFinishedExams Taille: 0 | Exams: []
+CreateNewExam Utilisateur: julien
+CreateNewExam Niveau: 0
+CreateNewExam Id: 1
+CreateNewExam Exam après enregistrement: {1 2015-12-17 17:51:00.121011383 +0100 CET 0001-01-01 00:00:00 +0000 UTC 0 false 0 1}
+CreateNewExam Questions: [{1 Le courant électrique est-il dangereux pour le corps humain ? puces B0} {2 Quelle est la formule de la puissance dissipée par effet joule ? puces B0} {3 Que peut provoquer un accident d'origine électrique ? checkbox B0} {4 Quelle est l'intensité d'un circuit électrique monophasé ayant une résistance électrique de 50 &Omega; ? checkbox B0} {5 Les ouvrages électriques sont classés en trois grands domaines de tension: la très basse tension (TBT), la basse tension (BT) et la haute tension (HT). En courant alternatif, quelles sont les limites de la BT ? checkbox B0} {6 En cas d’accident d’origine électrique, quelle est la première opération à réaliser: puces B0} {7 Comment reconnaissez-vous un local « d’accès réservé aux électriciens » ? checkbox B0} {8 Principalement, que protège un dispositif différentiel à haute sensibilité de 30 mA ? checkbox B0}]
+CreateNewExam Question Id map avant suppression: map[3:4 4:5 5:6 6:7 7:8 0:1 1:2 2:3]
+CreateNewExam Question à supprimer: 4
+CreateNewExam Question à supprimer: 4
+CreateNewExam Question à supprimer: 5
+CreateNewExam Question à supprimer: 5
+CreateNewExam Question à supprimer: 2
+CreateNewExam QuestionIdMap après suppression: map[3:4 6:7 7:8 0:1 1:2]

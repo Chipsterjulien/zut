@@ -70,6 +70,7 @@ type ContenirExamsQuestions struct {
 	Id int `gorm:"primary_key"`
 	IdExams int `sql:"type:bigint REFERENCES Exams(id)"`
 	IdQuestions int `sql:"type:bigint REFERENCES Questions(id)"`
+	Done bool
 }
 
 type ContenirExamsReponses struct {

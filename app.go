@@ -37,8 +37,8 @@ func (r *Ressource) CreateNewExam(c *gin.Context) {
 	if !found {
 		authUserKeyNotFound(c)
 	} else {
-		log.Debug("Utilisateur: %s", user)
 		niveau := c.Param("niveau")
+		log.Debug("Utilisateur: %s", user)
 		log.Debug("Niveau: %s", niveau)
 		
 		// Obtenir l'id de l'user
@@ -46,6 +46,7 @@ func (r *Ressource) CreateNewExam(c *gin.Context) {
 		if err := r.db.Select("eleves.id").Table("eleves").Where("eleves.username=?", user).Find(&eleve).Error; err != nil {
 			log.Warning("Erreur: %v", err)
 			// Retourner un code d'erreur à l'application client (erreur 500 par exemple)
+			c.JSON(500, gin.H{"error": "Unable to find user"})
 			return
 		}
 		log.Debug("Id: %v", eleve.Id)
@@ -54,24 +55,26 @@ func (r *Ressource) CreateNewExam(c *gin.Context) {
 		// insert into exams (debut_exam, niveau_exam, id_eleve) values ("", "", "");
 		exam := Exams{
 			DebutExam: time.Now(),
-			NiveauExam: c.Param("niveau"),
+			NiveauExam: niveau,
 			IdEleve: eleve.Id,
 		}
 
 		if err := r.db.Debug().Save(&exam).Error; err != nil {
-			log.Debug("Erreur: %v", err)
+			log.Warning("Erreur: %v", err)
 			// Retourner un code d'erreur à l'application client (erreur 500 par exemple)
+			c.JSON(500, gin.H{"error": "Unable to create an exam"})
 			return
 		}
 
 		log.Debug("Exam après enregistrement: %v", exam)
 
 		// Obtenir la liste des questions
-		// select * from questions
+		// select * from questions where questions.categorie=exam.Niveau;
 		var questions = []Questions{}
-		if err := r.db.Find(&questions).Error; err != nil {
+		if err := r.db.Debug().Where("Questions.Categorie=?", "B" + niveau).Find(&questions).Error; err != nil {
 			log.Critical("Erreur: %v", err)
 			// Retourner un code d'erreur à l'application client (erreur 500 par exemple)
+			c.JSON(500, gin.H{"error": "Unable to get questions for exam"})
 			return
 		}
 		log.Debug("Questions: %v", questions)
@@ -85,10 +88,16 @@ func (r *Ressource) CreateNewExam(c *gin.Context) {
 			questionsIdMap[num] = q.Id
 		}
 
+		log.Debug("Question Id map avant suppression: %v", questionsIdMap)
+
 		for len(questionsIdMap) > 5 {
-			num := rand.Intn(len(questionsIdMap))
+			num := rand.Intn(len(questionsIdMap)) // <------- je peux tirer un nombre déjà supprimé !
+			log.Debug("Question à supprimer: %d", num)
 			delete(questionsIdMap, num)
 		}
+
+		log.Debug("QuestionIdMap après suppression: %v", questionsIdMap)
+
 
 		// On assigne les questions à l'exam
 		for _, id := range questionsIdMap {
@@ -99,14 +108,16 @@ func (r *Ressource) CreateNewExam(c *gin.Context) {
 			if err := r.db.Debug().Save(&examsQuestions).Error; err != nil {
 				log.Critical("Erreur: %v", err)
 				// Retourner un code d'erreur à l'application client (erreur 500 par exemple)
+				c.JSON(500, gin.H{"error": "Unable to assign questions with exam"})
 				return
 			}
 		}
 		// Une fois créer, envoyer un code 200 avec le num de l'exam
+		c.JSON(200, gin.H{"examId": exam.Id})
 	}
 }
 
-func (r *Ressource) ListOfFinishedExams(c *gin.Context) {
+func (r *Ressource) ListOfFinishedExams (c *gin.Context) {
 	log := logging.MustGetLogger("log")
 
 	user, found := c.Get(basicAuthWithDBForGin.AuthUserKey)
@@ -146,8 +157,19 @@ func (r *Ressource) ListOfUnfinishedExams(c *gin.Context) {
 	}
 }
 
+func (r *Ressource) GetQuestionNotDone(c *gin.Context) {
+	log := logging.MustGetLogger("log")
+
+	_ = log
+	idExam := c.Param("idExam")
+	log.Debug("idExam: %v", idExam)
+	// Renvoyer une question non faite de l'exam id
+
+}
+
 func startApp(db *gorm.DB) {
 	log := logging.MustGetLogger("log")
+	rand.Seed(time.Now().Unix())
 
 	if viper.GetString("logtype") != "debug" {
 		gin.SetMode(gin.ReleaseMode)
@@ -174,6 +196,7 @@ func startApp(db *gorm.DB) {
 		authorized.GET("listOfUnfinishedExams", r.ListOfUnfinishedExams)
 		authorized.GET("listOfFinishedExams", r.ListOfFinishedExams)
 		authorized.GET("createNewExam/:niveau", r.CreateNewExam)
+		authorized.GET("exam/:id", r.GetQuestionNotDone)
 	}
 
 	log.Debug("Port: %d", viper.GetInt("server.port"))
