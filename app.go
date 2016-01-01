@@ -177,7 +177,7 @@ func startApp(db *gorm.DB) {
 	r := NewRessource(db)
 
 	g.Use(cors.Middleware(cors.Config{
-		Origins:         "192.168.1.13, *",
+		Origins:         "*",
 		Methods:         "GET, PUT, POST, DELETE",
 		RequestHeaders:  "Origin, Authorization, Content-Type",
 		ExposedHeaders:  "",
