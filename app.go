@@ -1,16 +1,16 @@
 package main
 
 import (
+	"math/rand"
 	"strconv"
 	"time"
-	"math/rand"
 
+	"github.com/chipsterjulien/basicAuthWithDBForGin"
 	"github.com/gin-gonic/gin"
 	"github.com/itsjamie/gin-cors"
 	"github.com/jinzhu/gorm"
 	"github.com/op/go-logging"
 	"github.com/spf13/viper"
-	"github.com/chipsterjulien/basicAuthWithDBForGin"
 )
 
 // Struct permit to have DB access on method
@@ -40,7 +40,7 @@ func (r *Ressource) CreateNewExam(c *gin.Context) {
 		niveau := c.Param("niveau")
 		log.Debug("Utilisateur: %s", user)
 		log.Debug("Niveau: %s", niveau)
-		
+
 		// Obtenir l'id de l'user
 		var eleve = Eleves{}
 		if err := r.db.Select("eleves.id").Table("eleves").Where("eleves.username=?", user).Find(&eleve).Error; err != nil {
@@ -54,9 +54,9 @@ func (r *Ressource) CreateNewExam(c *gin.Context) {
 		// Créer un exam
 		// insert into exams (debut_exam, niveau_exam, id_eleve) values ("", "", "");
 		exam := Exams{
-			DebutExam: time.Now(),
+			DebutExam:  time.Now(),
 			NiveauExam: niveau,
-			IdEleve: eleve.Id,
+			IdEleve:    eleve.Id,
 		}
 
 		if err := r.db.Debug().Save(&exam).Error; err != nil {
@@ -71,7 +71,7 @@ func (r *Ressource) CreateNewExam(c *gin.Context) {
 		// Obtenir la liste des questions
 		// select * from questions where questions.categorie=exam.Niveau;
 		var questions = []Questions{}
-		if err := r.db.Debug().Where("Questions.Categorie=?", "B" + niveau).Find(&questions).Error; err != nil {
+		if err := r.db.Debug().Where("Questions.Categorie=?", "B"+niveau).Find(&questions).Error; err != nil {
 			log.Critical("Erreur: %v", err)
 			// Retourner un code d'erreur à l'application client (erreur 500 par exemple)
 			c.JSON(500, gin.H{"error": "Unable to get questions for exam"})
@@ -98,11 +98,10 @@ func (r *Ressource) CreateNewExam(c *gin.Context) {
 
 		log.Debug("QuestionIdMap après suppression: %v", questionsIdMap)
 
-
 		// On assigne les questions à l'exam
 		for _, id := range questionsIdMap {
 			examsQuestions := ContenirExamsQuestions{
-				IdExams: exam.Id,
+				IdExams:     exam.Id,
 				IdQuestions: id,
 			}
 			if err := r.db.Debug().Save(&examsQuestions).Error; err != nil {
@@ -117,7 +116,7 @@ func (r *Ressource) CreateNewExam(c *gin.Context) {
 	}
 }
 
-func (r *Ressource) ListOfFinishedExams (c *gin.Context) {
+func (r *Ressource) ListOfFinishedExams(c *gin.Context) {
 	log := logging.MustGetLogger("log")
 
 	user, found := c.Get(basicAuthWithDBForGin.AuthUserKey)
@@ -178,7 +177,7 @@ func startApp(db *gorm.DB) {
 	r := NewRessource(db)
 
 	g.Use(cors.Middleware(cors.Config{
-		Origins:         "*",
+		Origins:         "192.168.1.13, *",
 		Methods:         "GET, PUT, POST, DELETE",
 		RequestHeaders:  "Origin, Authorization, Content-Type",
 		ExposedHeaders:  "",
@@ -188,11 +187,12 @@ func startApp(db *gorm.DB) {
 	}))
 
 	g.Static("/static", "./static")
+	g.Static("/alarm", "./alarm")
 
 	authorized := g.Group("authorized", basicAuthWithDBForGin.BasicAuthWithDB(db, "Eleves"))
 	{
 		// Possibilité de supprimer la ligne suivante en ne modifiant que les headers et en allant à la page suivante
-		authorized.GET("/", func(c *gin.Context){})
+		authorized.GET("/", func(c *gin.Context) {})
 		authorized.GET("listOfUnfinishedExams", r.ListOfUnfinishedExams)
 		authorized.GET("listOfFinishedExams", r.ListOfFinishedExams)
 		authorized.GET("createNewExam/:niveau", r.CreateNewExam)

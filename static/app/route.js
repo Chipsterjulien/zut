@@ -1,5 +1,4 @@
 function Route ($stateProvider, $urlRouterProvider, RestangularProvider) {
-
   // Configuration de uirouter
   $urlRouterProvider.otherwise("/login");
   $stateProvider

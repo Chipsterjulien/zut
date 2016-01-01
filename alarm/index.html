@@ -1,0 +1,51 @@
+<DOCTYPE html>
+<html lang="fr">
+	<head>
+		<!-- Définition du charset de la page -->
+		<meta charset="utf-8" />
+		<!-- Définition du titre de l'application -->
+		<title>Alarme maison</title>
+		<!-- Chargement du CSS d'angular material -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/0.11.4/angular-material.css" />
+		<!-- <link rel="stylesheet" href="app/index.css">
+		<link rel="stylesheet" href="app/login/login.css"> -->
+	</head>
+	<body ng-app="appAlarm">
+		<div ui-view></div>
+
+		<md-toolbar md-scroll-shrink>
+			<div class="md-toolbar-tools">État des alarmes</div>
+		</md-toolbar>
+
+		<md-content>
+	    	<md-list>
+				<md-list-item class="md-3-line" ng-repeat="i in [1, 2, 3, 4]">
+					<div class="md-list-item-text">
+						<h3>essai 1</h3>
+						<h4>essai 2</h4>
+						<p>essai 3</p>
+					</div>
+					<md-button class="md-primary">Respond</md-button>
+					<md-divider ng-if="!$last"></md-divider>
+				</md-list-item>
+			</md-list>
+		</md-content>
+
+		<md-content>
+			<p>balcon: {{balcon}}</p>
+			<p>salon: {{salon}}</p>
+		</md-content>
+		
+		<!-- Chargement des framework angular, angular material, restangular et uirouter avec leur dépendances respectives -->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-animate.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-aria.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angular_material/0.11.4/angular-material.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+		<script type="text/javascript" src="http://cdn.jsdelivr.net/restangular/latest/restangular.min.js"></script>
+		<script type="text/javascript" src="http://cdn.jsdelivr.net/lodash/2.1.0/lodash.compat.min.js"></script>
+
+		<!-- Script personnel -->
+		<script type="text/javascript" src="alarm.controller.js"></script>
+	</body>
+</html>
