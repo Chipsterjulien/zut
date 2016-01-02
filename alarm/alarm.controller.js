@@ -15,11 +15,30 @@ console.log("test---------------------------------");
 function AlarmCtrl($scope, Restangular) {
 	var that = $scope;
 
-	console.log("----");
-	console.log("coin");
-	console.log("----");
+	ipMap = {
+		//salon: "localhost:8090",
+		balcon: "192.168.1.13:8090"
+	};
 
-	Restangular.oneUrl("balcon", "http://192.168.1.13:8090/api/v1/stateAlarm").get().then(function (data) {
-		that.balcon = data;
-	});
+	that.items = {};
+	for (var name in ipMap) {
+		Restangular.oneUrl(name, "http://" + ipMap[name] + "/api/v1/stateAlarm").get().then(function (data) {
+			that.items[name] = data;
+
+			console.log("data state: " + data.state);
+			console.log("data error: " + data.error);
+			console.log("Nom: " + name);
+			console.log("État: " + (that.items[name]).state);
+			console.log("Erreur: " + (that.items[name]).error);
+		});
+	}
+
+	console.log("Suite");
+
+	for (var n in that.items) {
+		console.log("Nom second: " + n);
+	}
+
+	console.log("Fin")
+	console.log("Nom fin: " + that.items["balcon"].state);
 }

@@ -3612,3 +3612,57 @@ Initdb db path: .
 Initdb db filename: temperature.db
 Initdb db: temperature.db
 startApp Port: 8080
+loadConfig "debug" is selected
+loadConfig loadConfig func:
+loadConfig   path: cfg
+loadConfig   filename: server
+loadConfig   logtype in file config is "debug"
+Initdb db path: .
+Initdb db filename: temperature.db
+Initdb db: temperature.db
+startApp Port: 8080
+loadConfig "debug" is selected
+loadConfig loadConfig func:
+loadConfig   path: cfg
+loadConfig   filename: server
+loadConfig   logtype in file config is "debug"
+Initdb db path: .
+Initdb db filename: temperature.db
+Initdb db: temperature.db
+startApp Port: 8080
+loadConfig "debug" is selected
+loadConfig loadConfig func:
+loadConfig   path: cfg
+loadConfig   filename: server
+loadConfig   logtype in file config is "debug"
+Initdb db path: .
+Initdb db filename: temperature.db
+Initdb db: temperature.db
+startApp Port: 8080
+loadConfig "debug" is selected
+loadConfig loadConfig func:
+loadConfig   path: cfg
+loadConfig   filename: server
+loadConfig   logtype in file config is "debug"
+Initdb db path: .
+Initdb db filename: temperature.db
+Initdb db: temperature.db
+startApp Port: 8080
+loadConfig "debug" is selected
+loadConfig loadConfig func:
+loadConfig   path: cfg
+loadConfig   filename: server
+loadConfig   logtype in file config is "debug"
+Initdb db path: .
+Initdb db filename: temperature.db
+Initdb db: temperature.db
+startApp Port: 8080
+loadConfig "debug" is selected
+loadConfig loadConfig func:
+loadConfig   path: cfg
+loadConfig   filename: server
+loadConfig   logtype in file config is "debug"
+Initdb db path: .
+Initdb db filename: temperature.db
+Initdb db: temperature.db
+startApp Port: 8080
