@@ -1,0 +1,41 @@
+<md-toolbar md-scroll-shrink>
+	<div class="md-toolbar-tools">État des alarmes</div>
+</md-toolbar>
+
+<md-content>
+	<md-list>
+		<md-list-item class="md-2-line">
+			<div class="md-list-item-text">
+				<h3>État du salon: {{items.Salon.state}}</h3>
+				<p>Communication: Mettre un timeout et si la fonction plante, mettre un texte un rouge ! Interdire la prise de photo si l'alarme est activée donc mettre le bouton en disable</p>
+			</div>
+			<div ng-switch on="items.Salon.state">
+				<div ng-switch-when="stop">
+					<md-button class="md-raised" ng-click="startCam('Salon')">Activer</md-button>
+				</div>
+				<div ng-switch-when="start">
+					<md-button class="md-raised md-warn" ng-click="stopCam('Salon')">Arrêter</md-button>
+				</div>
+			</div>
+			<md-button class="md-raised md-primary">Prendre une photo</md-button>
+			<md-divider ng-if="!$last"></md-divider>
+		</md-list-item>
+
+		<md-list-item class="md-2-line">
+			<div class="md-list-item-text">
+				<h3>État du balcon: {{items.Balcon.state}}</h3>
+				<p>Communication: </p>
+			</div>
+			<div ng-switch on="items.Balcon.state">
+				<div ng-switch-when="stop">
+					<md-button class="md-raised" ng-click="startCam('Balcon')">Activer</md-button>
+				</div>
+				<div ng-switch-when="start">
+					<md-button class="md-raised md-warn" ng-click="stopCam('Balcon')">Arrêter</md-button>
+				</div>
+			</div>
+			<md-button class="md-raised md-primary">Prendre une photo</md-button>
+			<md-divider ng-if="!$last"></md-divider>
+		</md-list-item>
+	</md-list>
+</md-content>

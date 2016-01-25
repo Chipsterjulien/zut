@@ -12,34 +12,6 @@
 	</head>
 	<body ng-app="appAlarm">
 		<div ui-view></div>
-
-		<md-toolbar md-scroll-shrink>
-			<div class="md-toolbar-tools">État des alarmes</div>
-		</md-toolbar>
-
-		<md-content>
-	    	<md-list>
-				<md-list-item class="md-3-line" ng-repeat="(key, item) in items">
-					<div class="md-list-item-text">
-						<h3>{{key}}</h3>
-						<h4>{{item}}</h4>
-						<p>{{items}}</p>
-					</div>
-					<md-button class="md-primary">Respond</md-button>
-					<md-divider ng-if="!$last"></md-divider>
-					coin
-				</md-list-item>
-			</md-list>
-		</md-content>
-		a
-		<div ng-reapeat="(key, item) in items">
-			{{key}}
-		</div>
-
-		<md-content>
-			<p>balcon: {{balcon}}</p>
-			<p>salon: {{salon}}</p>
-		</md-content>
 		
 		<!-- Chargement des framework angular, angular material, restangular et uirouter avec leur dépendances respectives -->
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js"></script>
@@ -51,6 +23,6 @@
 		<script type="text/javascript" src="http://cdn.jsdelivr.net/lodash/2.1.0/lodash.compat.min.js"></script>
 
 		<!-- Script personnel -->
-		<script type="text/javascript" src="alarm.controller.js"></script>
+		<script type="text/javascript" src="template/alarm.controller.js"></script>
 	</body>
 </html>
